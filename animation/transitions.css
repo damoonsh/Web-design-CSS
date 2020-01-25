@@ -1,0 +1,29 @@
+body  {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    /* We are saying what type of transition are we going to do */
+    /* transition-property: background, border-radius, transform; */
+    /* It will animate all of the properties */
+    transition-property: all;
+    
+    /* It fades into red, the first time is for background
+    and the border-radius is the second one */
+    transition-duration: 1s, 3s,5s;
+    /* transition-delay: 0.5s; */
+    transition-timing-function: ease-in;
+}
+
+.box:hover {
+    /* It is going to from white to red but without transition */
+    background: red;
+    border-radius: b 50%;
+    transform: rotateY(180deg);
+}

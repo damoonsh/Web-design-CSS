@@ -1,0 +1,52 @@
+body {
+    background: #333333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    /* Setting the number of times it should repeat */
+    animation-iteration-count: infinite;
+    /* delay for the animation */
+    animation-delay: 2s;
+    /* It alternates the direction */
+    /* animation-direction: alternate; */
+
+    /* With ease-in starts slow and ends fast and vise versa in ease-out */
+    animation-timing-function: ease-in;
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 0;
+    }
+    25% {
+        background-color: red;
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background-color: blue;
+        left: 300px;
+        top: 300px;
+        border-radius: 45% 50% 90% 10%;
+    }
+    75% {
+        background-color: chartreuse;
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    100% {
+        background-color: white;
+        border-radius: 50% 50% 50% 50%;
+    }
+}

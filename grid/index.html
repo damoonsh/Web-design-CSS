@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grids</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            
+            /* rid-column-gap: 1em;
+            grid-row-gap: 1em;g */
+
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellendus consectetur, eligendi accusantium illum dolor rerum beatae nostrum iure iste similique cupiditate consequuntur. Autem soluta aut quasi. Ea iure aut expedita saepe voluptate quas tempore velit doloribus voluptatem nobis dignissimos nisi nemo, possimus fugit earum soluta accusantium odio sit sunt iusto reiciendis aliquid adipisci minima. Eum ad at odit repellendus voluptates, quos, unde dolorum maiores laborum sed esse? Fuga nam quo doloremque aspernatur voluptatem quaerat debitis, porro sint expedita illum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi enim et assumenda accusantium! Minima ut, velit adipisci cum vel provident quibusdam! Laboriosam atque nostrum placeat dolores dolore, vel porro!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellendus consectetur, eligendi accusantium illum dolor rerum beatae nostrum iure iste similique cupiditate consequuntur. Autem soluta aut quasi. Ea iure aut expedita saepe voluptate quas tempore velit doloribus voluptatem nobis dignissimos nisi nemo, possimus fugit earum soluta accusantium odio sit sunt iusto reiciendis aliquid adipisci minima. Eum ad at odit repellendus voluptates, quos, unde dolorum maiores laborum sed esse? Fuga nam quo doloremque aspernatur voluptatem quaerat debitis, porro sint expedita illum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi enim et assumenda accusantium! Minima ut, velit adipisci cum vel provident quibusdam! Laboriosam atque nostrum placeat dolores dolore, vel porro!
+        </div>
+        <div>
+            Hell
+        </div>
+    </div>
+</body>
+</html>
